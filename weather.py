@@ -24,5 +24,4 @@ for i in range(1,n+1):
       if weatherprediction(t,h,W):
         count+=1
         print(weatherprediction(t,h,W))
-if (count==n):
-   print("all test cases passed")
+
