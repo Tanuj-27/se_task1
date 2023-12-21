@@ -13,3 +13,16 @@ n=int(input("enter no:of test cases"))
 with open("/content/weather predicty/testcases.txt",'r') as file:
   code = file.read()
   exec(code)
+
+count=0
+for i in range(1,n+1):
+      print("test case ",i)
+      t=int(input("enter temp"))
+      h= float(input("enter humidity(conver percentage into decimal)"))
+      W=float(input("enter speed"))
+      count+=1
+      if weatherprediction(t,h,W):
+        count+=1
+        print(weatherprediction(t,h,W))
+if (count==n):
+   print("all test cases passed")
